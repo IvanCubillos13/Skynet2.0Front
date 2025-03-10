@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - LabTools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LABTOOLS</h1>
+            <img src="images/logo.png" alt="Escuela Colombiana de Ingeniería" class="logo">
+        </header>
+
+        <div class="booking-box">
+            <h2>Laboratorios disponibles</h2>
+            <select id="lab-select">
+                <option value="lab1">Opción 1</option>
+                <option value="lab2">Opción 2</option>
+                <option value="lab3">Opción 3</option>
+            </select>
+
+            <!-- Espaciado entre select y el input -->
+            <br><br>
+
+            <!-- Barra de entrada para razón de la reserva -->
+            <input type="text" id="reason" placeholder="Razón de la reserva">
+
+            <div class="buttons">
+                <button onclick="reservar()">Reservar</button>
+                <button onclick="volver()">Volver</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function reservar() {
+            let reason = document.getElementById("reason").value;
+            if (reason.trim() === "") {
+                alert("Por favor, ingrese una razón para la reserva.");
+            } else {
+                alert("Reserva realizada correctamente.");
+            }
+        }
+
+        function volver() {
+            window.location.href = "dashboard.html";
+        }
+    </script>
+</body>
+</html>

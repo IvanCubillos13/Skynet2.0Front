@@ -1,0 +1,148 @@
+/* ==== GENERAL ==== */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #A8E6A3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    background-color: #3E8E41;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #2D7D3D;
+}
+
+/* ==== LOGIN ==== */
+.login-container {
+    background-color: #3E8E41;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+label {
+    display: block;
+    color: white;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #A8E6A3;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ==== DASHBOARD ==== */
+.dashboard-container {
+    background-color: #C8E6C9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D7D3D;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.logo {
+    width: 80px;
+}
+
+/* ==== MENÚ ==== */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* ==== BOOKING PAGE ==== */
+.booking-box {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: black;
+    font-size: 18px;
+}
+
+select {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* ==== SELECT OPTIONS ==== */
+select option {
+    background-color: white;
+    color: black;
+}
+
+select option:nth-child(2),
+select option:nth-child(3) {
+    background-color: red;
+    color: white;
+}
+
+/* ==== BOTONES EN BOOKING ==== */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings - LabTools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LABTOOLS</h1>
+            <img src="images/logo.png" alt="Escuela Colombiana de Ingeniería" class="logo">
+        </header>
+
+        <div class="booking-box">
+            <h2>Mis Reservas</h2>
+            <select id="my-bookings">
+                <option value="reserva1">Reserva 1</option>
+                <option value="reserva2">Reserva 2</option>
+                <option value="reserva3">Reserva 3</option>
+            </select>
+
+            <!-- Botones de Eliminar y Volver -->
+            <div class="button-container">
+                <button onclick="eliminar()">Eliminar</button>
+                <button onclick="window.location.href='dashboard.html'">Volver</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function eliminar() {
+            alert("Reserva eliminada correctamente.");
+        }
+    </script>
+</body>
+</html>
